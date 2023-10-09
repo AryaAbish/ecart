@@ -1,0 +1,29 @@
+<form (ngSubmit)="editData()" action="" class="form-control container w-50 my-3 fs-5" style="color: rgb(215, 127, 215);">
+    <label for="name" class="form-label">Product Name</label>
+    <input [(ngModel)]="pdata.name" type="text" id="name" name="pname" class="form-control">
+
+    <label for="id" class="form-label">Category Id</label>
+    <input [(ngModel)]="pdata.categoryId" type="text" id="id" name="cid" class="form-control">
+
+    <label for="price" class="form-label">Price</label>
+    <input [(ngModel)]="pdata.price" type="text" id="price" name="price" class="form-control">
+
+    <label for="rat" class="form-label">Rating</label>
+    <input [(ngModel)]="pdata.rating" type="text" id="rat" name="rating" class="form-control">
+
+    <label for="rev" class="form-label">Review</label>
+    <input [(ngModel)]="pdata.review" type="text" id="rev" name="review" class="form-control">
+
+    <label for="vname" class="form-label">Vendor Name</label>
+    <input [(ngModel)]="pdata.vendorName" type="text" id="vname" name="vname" class="form-control">
+
+    <label for="img" class="form-label">Image</label>
+    <input [(ngModel)]="pdata.image" type="text" id="img" name="image" class="form-control">
+
+    <label for="des" class="form-label">Description</label>
+    <textarea [(ngModel)]="pdata.description" type="text" id="des" name="desc" class="form-control"></textarea>
+
+    <div class="text-end">
+        <button type="submit" id="d" class="btn btn-warning m-2 text-white">Update</button>
+    </div>
+</form>

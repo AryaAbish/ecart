@@ -1,0 +1,37 @@
+ <div *ngIf="loading" class="text-center mt-5">
+    <i class="fa-solid fa-spinner fa-spin fa-4x"></i>
+ </div>
+ 
+ <!-- Product section-->
+ <section *ngIf="!loading" class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><img style="height: 500px;" class="card-img-top mb-5 mb-md-0" src="{{pdata.image}}" alt="..." /></div>
+            <div class="col-md-6">
+                <div class="small mb-1">SKU: BST-498</div>
+                <h1 class="display-5 fw-bolder" style="color:rgb(215, 127, 215) ;">{{pdata.name}}</h1>
+                <div class="fs-5 mb-5">
+                    <span style="color:rgb(215, 127, 215) ;">Rs{{pdata.price}}</span>
+                </div>
+                <p class="lead" style="color:rgb(215, 127, 215) ;">{{pdata.description}}</p>
+                <p class="lead" style="color:rgb(215, 127, 215) ;">Vendor Name: {{pdata.vendorName}}</p>
+                <p class="lead" style="color:rgb(215, 127, 215) ;">Rating: {{pdata.rating}}</p>
+                <p class="lead" style="color:rgb(215, 127, 215) ;">Review: {{pdata.review}}</p>
+                <div class="d-flex">
+                   <a href="products/edit/{{pdata.id}}">
+                        <button id="d" class="btn btn-outline-white flex-shrink-0 text-white" type="button" style="background-color:rgb(215, 127, 215) ;">
+                            <i class="bi-cart-fill me-1"></i>
+                           Edit
+                        </button>
+                   </a>
+                   <a>
+                        <button (click)="deleteProduct()" id="d" class="btn btn-outline-white flex-shrink-0 text-white ms-5" type="button" style="background-color:rgb(215, 127, 215) ;">
+                            <i class="bi-cart-fill me-1"></i>
+                           Delete
+                        </button>
+                   </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

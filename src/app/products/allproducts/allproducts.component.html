@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row text-center">
+        <div class="col-3 p-2" (click)="filterCategory('')">
+            <img class="w-100 cat" src="https://i.postimg.cc/h40VysGR/woman-online-shopping-with-laptop-and-e-commerce-elements-vector-removebg-preview.png" alt="" style="height: 200px;">
+            <h3>All Products</h3>
+        </div>
+        <div class="col-3 p-2" (click)="filterCategory(1)">
+            <img class="w-100 cat" src="https://i.postimg.cc/zGJjJfx6/IMG-0282-1024x1024-2x.webp" alt="" style="height: 200px;">
+            <h3>Earrings</h3>
+        </div>
+        <div class="col-3 p-2" (click)="filterCategory(2)">
+            <img class="w-100 cat" src="https://i.postimg.cc/L6hyf5tP/R-1.jpg" alt="" style="height: 200px;">
+            <h3>Bangles</h3>
+        </div>
+        <div class="col-3 p-2" (click)="filterCategory(3)">
+            <img class="w-100 cat" src="https://i.postimg.cc/pL387X5g/2017-New-Z-Fashion-Necklace-Collar-Bib-Necklaces-Pendants-Costume-Statement-Necklace-Choker-Pearl-Cr.jpg" alt="" style="height: 200px">
+            <h3>Chains</h3>
+        </div>
+    </div>
+</div>
+
+
+<!-- Section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div *ngFor="let i of filterProducts | search: searchKey :'name' " class="col mb-5">
+                <div class="card h-100" style="border-color:rgb(215, 127, 215) ;">
+                    <!-- Product image-->
+                    <img style="height: 300px;" id="d" class="card-img-top" src="{{i.image}}" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center" style="color:rgb(215, 127, 215) ;">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{i.name}}</h5>
+                            <!-- Product price-->
+                            Rs{{i.price}}
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a id="d" class="btn btn-outline-light mt-auto" href="products/view/{{i.id}}"
+                                style="background-color: rgb(215, 127, 215) ; color: white;">View options</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

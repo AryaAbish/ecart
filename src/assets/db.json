@@ -1,0 +1,114 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Jhumkka Earrings",
+      "categoryId": "1",
+      "description": "Indian style Jhumkka Earrings",
+      "price": 120,
+      "image": "https://i.postimg.cc/tTBvjjzF/OIP.jpg",
+      "rating": "4.1",
+      "review": 200,
+      "vendorName": "Akamsha"
+    },
+    {
+      "id": 2,
+      "name": "Ear Rings",
+      "categoryId": "1",
+      "description": "European style drop Earrings",
+      "price": 180,
+      "image": "https://i.postimg.cc/zGJjJfx6/IMG-0282-1024x1024-2x.webp",
+      "rating": "5.0",
+      "review": 500,
+      "vendorName": "pippin"
+    },
+    {
+      "id": 3,
+      "name": "Hoop Earrings",
+      "categoryId": "1",
+      "description": "Large Hoop Earrings",
+      "price": "150",
+      "image": "https://i.postimg.cc/1tZ0j5Vv/R.jpg",
+      "rating": "4.2",
+      "review": "50",
+      "vendorName": "pave"
+    },
+    {
+      "id": 4,
+      "name": "Rosegold Bangles",
+      "categoryId": "2",
+      "description": "Rosegold Bangles for wedding",
+      "price": 250,
+      "image": "https://i.postimg.cc/L6hyf5tP/R-1.jpg",
+      "rating": "5.0",
+      "review": 100,
+      "vendorName": "pc"
+    },
+    {
+      "id": 5,
+      "name": "Lakshmi Bangles",
+      "categoryId": "2",
+      "description": "Antiq Lakshmi Bangles for wedding",
+      "price": 450,
+      "image": "https://i.postimg.cc/4NbzYTMc/lakshmi-gold-bangles-scaled.jpg",
+      "rating": "5.0",
+      "review": 300,
+      "vendorName": "ajew"
+    },
+    {
+      "id": 6,
+      "name": "Stone Bangles",
+      "categoryId": "2",
+      "description": "Rhine stone Bangles",
+      "price": 350,
+      "image": "https://i.postimg.cc/GhBWRqS6/bangle-018d.jpg",
+      "rating": "4.0",
+      "review": 100,
+      "vendorName": "indiastore"
+    },
+    {
+      "id": 7,
+      "name": "Necklace",
+      "categoryId": "3",
+      "description": "Collar Bib Necklace",
+      "price": "750",
+      "image": "https://i.postimg.cc/pL387X5g/2017-New-Z-Fashion-Necklace-Collar-Bib-Necklaces-Pendants-Costume-Statement-Necklace-Choker-Pearl-Cr.jpg",
+      "rating": "4.0",
+      "review": 100,
+      "vendorName": "aliexpress"
+    },
+    {
+      "id": 8,
+      "name": "Necklace",
+      "categoryId": "3",
+      "description": "Indian stone Necklace",
+      "price": 950,
+      "image": "https://i.postimg.cc/kgRRx3Yw/fashionable-diamond-necklace-zoom-1.jpg",
+      "rating": "4.0",
+      "review": "50",
+      "vendorName": "indiastore"
+    },
+    {
+      "id": 9,
+      "name": "Necklace",
+      "categoryId": "3",
+      "description": "Simple chain Necklace",
+      "price": 250,
+      "image": "https://i.postimg.cc/4xXN3Ckm/il-fullxfull-1062093488-cwlj.webp",
+      "rating": "3.0",
+      "review": 200,
+      "vendorName": "etsy"
+    },
+    {
+      "id": "10",
+      "name": "RubyChain",
+      "categoryId": "3",
+      "description": "Ruby chain of 3 layers",
+      "price": "500",
+      "image": "https://i.postimg.cc/WzTN2Fhr/PD0148-1-1024x1024.webp",
+      "rating": "3",
+      "review": "40",
+      "vendorName": "mgd"
+    }
+  ]
+}

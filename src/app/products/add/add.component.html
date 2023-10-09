@@ -1,0 +1,43 @@
+<h2 class="text-center my-3" style="color: rgb(215, 127, 215);">Add Products</h2>
+<form (ngSubmit)="addProduct()" [formGroup]="addForm" action="" class="form-control container w-50 my-3 fs-5" style="color: rgb(215, 127, 215);">
+    <label for="id" class="form-label">Product Id</label>
+    <input formControlName="id" type="text" id="id" name="pid" class="form-control">
+    <p *ngIf="addForm.get('id')?.errors && addForm.get('id')?.touched" class="text-danger fs-6">Accept Numbers Only</p>
+
+    <label for="name" class="form-label">Product Name</label>
+    <input formControlName="name" type="text" id="name" name="pname" class="form-control">
+    <p *ngIf="addForm.get('name')?.errors && addForm.get('name')?.touched" class="text-danger fs-6">Accept Letters Only</p>
+
+    <label for="id" class="form-label">Category Id</label>
+    <input formControlName="categoryId" type="text" id="id" name="cid" class="form-control">
+    <p *ngIf="addForm.get('categoryId')?.errors && addForm.get('categoryId')?.touched" class="text-danger fs-6">Accept Numbers Only</p>
+
+    <label for="price" class="form-label">Price</label>
+    <input formControlName="price" type="text" id="price" name="price" class="form-control">
+    <p *ngIf="addForm.get('price')?.errors && addForm.get('price')?.touched" class="text-danger fs-6">Accept Numbers Only</p>
+
+    <label for="rat" class="form-label">Rating</label>
+    <input formControlName="rating" type="text" id="rat" name="rating" class="form-control">
+    <p *ngIf="addForm.get('rating')?.errors && addForm.get('rating')?.touched" class="text-danger fs-6">Accept Numbers Only</p>
+
+    <label for="rev" class="form-label">Review</label>
+    <input formControlName="review" type="text" id="rev" name="review" class="form-control">
+    <p *ngIf="addForm.get('review')?.errors && addForm.get('review')?.touched" class="text-danger fs-6">Accept Numbers Only</p>
+
+    <label for="vname" class="form-label">Vendor Name</label>
+    <input formControlName="vendorName" type="text" id="vname" name="vendorname" class="form-control">
+    <p *ngIf="addForm.get('vendorName')?.errors && addForm.get('vendorName')?.touched" class="text-danger fs-6">Accept Letters Only</p>
+
+    <label for="img" class="form-label">Image Url</label>
+    <input formControlName="image" type="text" id="img" name="image" class="form-control">
+    <p *ngIf="addForm.get('image')?.errors && addForm.get('image')?.touched" class="text-danger fs-6">Accept url Only</p>
+
+    <label for="des" class="form-label">Description</label>
+    <textarea formControlName="description" type="text" id="des" name="description" class="form-control"></textarea>
+    <p *ngIf="addForm.get('description')?.errors && addForm.get('description')?.touched" class="text-danger fs-6">Accept Letters Only</p>
+
+    <div class="text-end">
+        <button type="submit" id="d" class="btn btn-warning m-2 text-white">Add</button>
+    </div>
+</form>
+
